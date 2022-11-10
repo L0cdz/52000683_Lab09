@@ -13,7 +13,7 @@ namespace TestStudent
            
                 Student student = new Student();
                 double status = student.Score = 10;
-                Assert.AreEqual(status, 10);
+                Assert.AreEqual(status,10);
      
         }
         [TestMethod]
@@ -25,8 +25,17 @@ namespace TestStudent
             if (student.Score > 10 || student.Score < 0) { throw new SystemException(); }
             
         }
-        
-        
+        [TestMethod]
+        //Testcase3
+        public void checkLetterScore_Should_Success()
+        {
+            Student student = new Student();
+            student.Score = 10;
+            char letter = student.getLetterScore();
+            Assert.AreEqual(letter,10);
+
+
+        }
         
     }
 }
