@@ -26,16 +26,15 @@ namespace TestStudent
             
         }
         [TestMethod]
-        //Testcase3
+        //Testcase4-getLetterScore
         public void checkLetterScore_Should_Success()
         {
             Student student = new Student();
             student.Score = 10;
             char letter = student.getLetterScore();
-            Assert.AreEqual(letter,10);
-
-
+            Assert.AreEqual(letter,65);
         }
         
+
     }
 }
