@@ -6,12 +6,12 @@ namespace TestStudent
     public class UnitTest1
     {
         [TestMethod]
-        public void addStudent_Should_Success()
+        //Testcase1
+        public void addScore_Should_Success()
         {
             Student student = new Student();
             double status = student.Score = 10 ;
             Assert.AreEqual(status,10);
-            
         }
     }
 }
